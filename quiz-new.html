@@ -532,7 +532,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="section__left-wrapper">
                             <p class="title__thank">Дякуємо за ваші <br> відповіді!</p>
                             <p class="title__info-thank">Щоб отримати результат тесту <br> заповніть будь ласка форму</p>
-                            <form action="#" class="contact__form">
+                            <form action="teleg.php" name="Квіз" class="contact__form">
                                 <div class="contacts-form__col quiz-contacts">
                                     <input type="text" name="name" placeholder="Ім'я">
                                 </div>
@@ -540,7 +540,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <input class="form-tel" type="tel" name="tel" placeholder="Номер телефону" required="">
                                 </div>
                             </form>
-                            <button class="send__btn">ВІДПРАВИТИ</button>
+                            <button class="send__btn" type="submit" onclick="sendMessage()">ВІДПРАВИТИ</button>
                         </div>
                         <div class="form__info">
                             <svg xmlns="http://www.w3.org/2000/svg" width="33" height="35" viewBox="0 0 33 35" fill="none">
