@@ -144,7 +144,7 @@ main {
     flex-direction: row;
     width: 100%;
     gap: 25px;
-    z-index: 51;
+    z-index: 101;
     transition: all .5s ease;
 }
 
@@ -526,7 +526,7 @@ main {
     width: 100%;
     height: 100vh;
     background: #274A9A;
-    z-index: 50;
+    z-index: 100;
     position: relative;
 }
 
@@ -892,7 +892,7 @@ main {
         flex-direction: row;
         width: 90%;
         gap: 25px;
-        z-index: 51;
+        z-index: 101;
         transition: all .5s ease;
     }
 
