@@ -89,7 +89,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img src="assets/img/scroll-top.svg" alt="arrow top">
       </div>
     </button>
-    <header class="header sec-adapt__width" data-aos="fade-right">
+    <header class="header sec-adapt__width" id="header" data-aos="fade-right">
       <div class="container">
         <div class="header__main">
           <div class="header__top">
@@ -585,6 +585,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     const nextBtn = document.getElementById('nextBtn')
     const prevBtn = document.getElementById('prevBtn')
     const resultPage = document.getElementById('result')
+    const header = document.getElementById('header')
 
     // overflows
     const overflowFactAim = document.getElementById('overflow__fact-aim')
@@ -671,6 +672,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 }
                 else if(count === 0){
                     let showOverflowFactAim = setTimeout(() => {
+                        header.style.opacity = 0
+                        header.style.visibility = 'hidden'
+                        header.style.display = 'none'
                         overflowFactAim.style.opacity = 1
                         overflowFactAim.style.visibility = 'visible'
                         overflowFactAim.classList.add('active')
@@ -681,6 +685,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     }, 100)
                     $('.overflowNext').click(function() {
                         let closeOverflowFactAim = setTimeout(() => {
+                            header.style.opacity = 1
+                            header.style.visibility = 'visible'
+                            header.style.display = 'block'
                             overflowFactAim.style.opacity = 0
                             overflowFactAim.style.visibility = 'hidden'
                             $('.progressbar').removeClass('overflow')
@@ -713,6 +720,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 }
                 else if(count === 4){
                     let showOverflowFactSleep = setTimeout(() => {
+                        header.style.opacity = 0
+                        header.style.visibility = 'hidden'
+                        header.style.display = 'none'
                         overflowFactSleep.style.opacity = 1
                         overflowFactSleep.style.visibility = 'visible'
                         overflowFactSleep.classList.add('active')
@@ -723,6 +733,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     }, 100)
                     $('.overflowNext').click(function() {
                         let closeOverflowFactSleep = setTimeout(() => {
+                            header.style.opacity = 1
+                            header.style.visibility = 'visible'
+                            header.style.display = 'block'
                             overflowFactSleep.style.opacity = 0
                             overflowFactSleep.style.visibility = 'hidden'
                             $('.progressbar').removeClass('overflow')
@@ -755,6 +768,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 }
                 else if(count === 6){
                     let showOverflowFactSmth = setTimeout(() => {
+                        header.style.opacity = 0
+                        header.style.visibility = 'hidden'
+                        header.style.display = 'none'
                         overflowFactSmth.style.opacity = 1
                         overflowFactSmth.style.visibility = 'visible'
                         overflowFactSmth.classList.add('active')
@@ -765,6 +781,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     }, 100)
                     $('.overflowNext').click(function() {
                         let closeOverflowFactSmth = setTimeout(() => {
+                            header.style.opacity = 1
+                            header.style.visibility = 'visible'
+                            header.style.display = 'block'
                             overflowFactSmth.style.opacity = 0
                             overflowFactSmth.style.visibility = 'hidden'
                             $('.progressbar').removeClass('overflow')
