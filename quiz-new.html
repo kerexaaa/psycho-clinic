@@ -828,6 +828,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     console.log(user_answers)
                     quizMain.classList.remove("active")
                     let hideQuiz = setTimeout(() => {
+                        header.style.opacity = 0
+                        header.style.visibility = 'hidden'
+                        header.style.display = 'none'
                         quizMain.style.opacity = 0
                         quizMain.style.visibility = 'hidden'
                     }, 100)
@@ -840,6 +843,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     }, 801)
                     overflowResult.classList.remove('active')
                     let closeOverflow_analytics = setTimeout(() => {
+                        header.style.opacity = 1
+                        header.style.visibility = 'visible'
+                        header.style.display = 'block'
                         overflowResult.style.opacity = 0
                         overflowResult.style.visibility = 'hidden'
                     }, 3300)
