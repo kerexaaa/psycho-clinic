@@ -638,6 +638,10 @@ strong {
     height: 31px;
 }
 
+.creator {
+    overflow-y: hidden;
+}
+
 .creator .section__left .button:after, .offer__content .button:after {
     content: url(../img/Arrow\ 4.png);
     position: absolute;
@@ -776,22 +780,6 @@ p.title__creator::after {
     margin-bottom: 20px;
 }
 
-.creator .section__right .play-button {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #F5775B;
-    width: 64px;
-    height: 64px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-}
-
 .creator .section__right .play-button .play-btn {
     background-color: rgba(247, 151, 129, 1);
     width: 64px;
@@ -827,7 +815,7 @@ p.title__creator::after {
     justify-content: center;
     top: 50%;
     z-index: 3;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, -50%);
     background-color: #F5775B;
     width: 64px;
@@ -835,6 +823,13 @@ p.title__creator::after {
     outline: none;
     border: none;
     border-radius: 5px;
+}
+
+.creator .section__right .play-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 .creator-wrapper {
@@ -849,7 +844,6 @@ p.title__creator::after {
     -o-object-fit: cover;
     object-fit: cover;
     border-radius: 15px;
-    margin-top: -169px;
 }
 
 .creator .section__right-wrapper {
@@ -857,6 +851,7 @@ p.title__creator::after {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-top: -129px;
 }
 
 /* about us new close */
@@ -2084,6 +2079,10 @@ p {
     width: 100%;
     height: 530px;
     overflow: hidden;
+}
+
+.melania {
+    flex-direction: row-reverse;
 }
 
 .successes .specialist__img {
@@ -4332,7 +4331,15 @@ span.pay__num {
         -o-object-fit: cover;
         object-fit: cover;
         border-radius: 15px;
-        margin-top: -140px;
+        margin-top: 0;
+    }
+
+    .creator .section__right-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: -109px;
     }
 
     .mb150 {
@@ -5550,6 +5557,23 @@ span.pay__num {
         transition: .3s;
     }
 
+    .creator .section__right .play-button {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        z-index: 3;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        background-color: #F5775B;
+        width: 64px;
+        height: 64px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+
     .creator .banner__price.right {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -5582,6 +5606,15 @@ span.pay__num {
         object-fit: cover;
         border-radius: 15px;
         margin-top: 0;
+    }
+
+    .creator .section__right-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 0;
+        padding-right: 0;
     }
 
     .get-sale-button {
@@ -6419,6 +6452,22 @@ span.pay__num {
         margin-bottom: 25px;
     }
 
+    .melania {
+        flex-direction: column;
+    }
+
+    .successes:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .successes:nth-child(3) {
+        flex-direction: column;
+    }
+
+    .successes:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
     .semi__img {
         width: 100%;
         padding-top: 96%;
@@ -7146,7 +7195,7 @@ span.pay__num {
         -ms-flex-pack: right;
         justify-content: center;
         padding: 0 0 0 0px;
-        align-items: center;
+        align-items: flex-start;
         margin-top: 40px;
     }
 
@@ -7199,7 +7248,7 @@ span.pay__num {
         content: url(../img/Arrow\ 5.png);
         position: absolute;
         left: 50%;
-        top: 83%;
+        top: 82%;
         transform: scale(1.2);
         transform: translate(-50%, -50%);
     }
@@ -7250,6 +7299,10 @@ span.pay__num {
     .swiper-button-prev, .swiper-rtl .swiper-button-next {
         left: 0px;
         right: auto;
+    }
+
+    .skillsetSwiper .swiper-wrapper {
+        align-items: center;
     }
 
     .skills .swiper-button-next, .swiper-button-prev {
@@ -7637,8 +7690,7 @@ span.pay__num {
     }
 
     .creator .price_discount {
-        flex-direction: row;
-        gap: 10px;
+        flex-direction: column;
     }
 
     .creator .price_discount .old__price {
