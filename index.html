@@ -20,12 +20,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"/>
   <link rel="stylesheet" media="all" href="assets/css/style.css?rand=4734e637" media="print" onload="this.media='all'">
 
+<!-- EasyWeek Appointment Widget: https://easyweek.com.ua/ -->
+<script src="https://widget.easyweek.io/widget.js"></script>
+<script>var ewWidget = new EasyWeekWidget({url: 'https://widget.easyweek.io/goroshenko', button: { text: 'Онлайн-запис', showText: true, color: '#ffffff', background: '#f79781', textColor: '#383868', textBackground: '#ffffff' }})
+</script>
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N2X7PSR');</script>
+})(window,document,'script','dataLayer','GTM-N2X7PSR');
+</script>
 <!-- End Google Tag Manager -->
 <!-- Hotjar Tracking Code for https://goroshenko.com.ua -->
 <script>
@@ -38,6 +44,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 
 <body id="home" class="home-page">
@@ -73,7 +80,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="popup-form__col">
               <input class="form-tel" name="tel" type="tel" placeholder="+ 38 (000) 000-00-00" required pattern="\+38\((\d{3})\)\d{3}-\d{2}-\d{2}">
-            </div>         
+            </div>  
+            <div class="popup-form__col">
+                <input type="text" name="mess" placeholder="Коментар">
+            </div>   
             <div class="popup-form__col">
               <button type="submit" class="button button--secondary">зателефонуйте мені</button>
             </div>
@@ -141,7 +151,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         fill="#D3DDE6" />
                     </svg>
                   </span>
-                  <span class="social-link__text">Львів, вул. Костя Левицького 110</span>
+                  <span class="social-link__text">Львів, вул. К. Левицького 110</span>
                 </a>
               </div>
               <div class="header__actions-item">
@@ -170,12 +180,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </a>
               </li>
               <li class="nav__list-item">
-                <a href="about_us.html" class="nav__list-item-link">
+                <a href="about.html" class="nav__list-item-link">
                   <span class="nav__list-item-link-text">Про нас</span>
                 </a>
               </li>
               <li class="nav__list-item">
-                <a href="services.html" class="nav__list-item-link">
+                <a href="service.html" class="nav__list-item-link">
                   <span class="nav__list-item-link-text">Послуги</span>
                 </a>
               </li>
@@ -280,12 +290,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   </a>
                 </li>
                 <li class="nav__list-item">
-                  <a href="about_us.html" class="nav__list-item-link">
+                  <a href="about.html" class="nav__list-item-link">
                     <span class="nav__list-item-link-text">Про нас</span>
                   </a>
                 </li>
                 <li class="nav__list-item">
-                  <a href="services.html" class="nav__list-item-link">
+                  <a href="service.html" class="nav__list-item-link">
                     <span class="nav__list-item-link-text">Послуги</span>
                   </a>
                 </li>
@@ -295,11 +305,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   </a>
                 </li>
 
-                <li class="nav__list-item">
-                  <a href="seminars.html" class="nav__list-item-link">
-                    <span class="nav__list-item-link-text">Семінари</span>
-                  </a>
-                </li>
                 <li class="nav__list-item">
                   <a href="#reviev" class="nav__list-item-link">
                     <span class="nav__list-item-link-text">Відгуки</span>
@@ -416,7 +421,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         fill="#D3DDE6" />
                     </svg>
                   </span>
-                  <span class="social-link__text">Львів, вул. Костя Левицького 110</span>
+                  <span class="social-link__text">Львів, вул. К. Левицького 110</span>
                 </a>
               </div>
               <div class="header__actions-item">
@@ -463,7 +468,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <p>Під час військових дій не підвищуємо ціну</p>
                     </div>
                 </div>
-                <a href="/quiz-new.html"><button class="button get-sale-button">отримати знижку <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <a href="quiz-new.html"><button class="button get-sale-button">отримати знижку <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path opacity="0.4" d="M12 1.99982C17.515 1.99982 22 6.48582 22 11.9998C22 17.5138 17.515 21.9998 12 21.9998C6.486 21.9998 2 17.5138 2 11.9998C2 6.48582 6.486 1.99982 12 1.99982Z" fill="white"/>
                     <path d="M10.5575 7.77911C10.7485 7.77911 10.9405 7.85211 11.0865 7.99811L14.5735 11.4681C14.7145 11.6091 14.7935 11.8001 14.7935 12.0001C14.7935 12.1991 14.7145 12.3901 14.5735 12.5311L11.0865 16.0031C10.7935 16.2951 10.3195 16.2951 10.0265 16.0011C9.73448 15.7071 9.73548 15.2321 10.0285 14.9401L12.9815 12.0001L10.0285 9.06011C9.73548 8.76811 9.73448 8.29411 10.0265 8.00011C10.1725 7.85211 10.3655 7.77911 10.5575 7.77911Z" fill="white"/>
                   </svg></button></a>
@@ -655,7 +660,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <li class="specialist__item swiper-slide swiper-slide-active" id="goroshenko" style="width: 328.571px; margin-right: 20px;" role="group" aria-label="1 / 5">
 
                 <div class="specialist__item-img">
-                  <img src="assets/img/expert1-1.jpg" alt="Меланія Горошенко" loading="lazy">
+                  <img src="assets/img/serts/goroshenko/IMG_2720.HEIC" alt="Меланія Горошенко" loading="lazy">
                 </div>
 
                 <div class="specialist__item-info">
@@ -679,15 +684,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <span class="specialist__item-merit-txt">Кваліфікований арт-терапевт</span>
                       </li>
                     </ul>
-                                      </div>
+                    </div>
                   <button class="specialist__item-button">Записатися</button>
-									<a href="/about_us/melaniiahoroshenko.html"><button class="specialist__item-button more-info">Детальніше</button></a>
+					<a href="/about_us/melaniiahoroshenko.html"><button class="more-info">Детальніше</button></a>
                 </div>
 
               </li>
               <li class="specialist__item swiper-slide swiper-slide-next" id="peters" style="width: 328.571px; margin-right: 20px;" role="group" aria-label="2 / 5">
                   <div class="specialist__item-img">
-                    <img src="assets/img/expert1-2.jpg" alt="Валерія Петерс" loading="lazy">
+                    <img src="assets/img/serts/peters/IMG_2729.png" alt="Валерія Петерс" loading="lazy">
                   </div>
 
                   <div class="specialist__item-info">
@@ -716,14 +721,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     </div>
                     <button class="specialist__item-button">Записатися</button>
-										<a href="about_us/valeriiapeters.html"><button class="specialist__item-button more-info">Детальніше</button></a>
+										<a href="about_us/valeriiapeters.html"><button class="more-info">Детальніше</button></a>
                   </div>
 
               </li>
               <li class="specialist__item swiper-slide" id="moroz" style="width: 328.571px; margin-right: 20px;" role="group" aria-label="3 / 5">
 
                 <div class="specialist__item-img">
-                  <img src="assets/img/expert1-3.jpg" alt="Софія Мороз" loading="lazy">
+                  <img src="assets/img/serts/zhmurko/ilona.png" alt="Софія Мороз" loading="lazy">
                 </div>
 
                 <div class="specialist__item-info">
@@ -748,7 +753,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </ul>
                                       </div>
                   <button class="specialist__item-button">Записатися</button>
-									<a href="about_us/ilonazhmurko.html"><button class="specialist__item-button more-info">Детальніше</button></a>
+									<a href="about_us/ilonazhmurko.html"><button class="more-info">Детальніше</button></a>
                 </div>
 
 
@@ -756,7 +761,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <li class="specialist__item swiper-slide" id="sherbiy" style="width: 328.571px; margin-right: 20px;" role="group" aria-label="4 / 5">
 
                 <div class="specialist__item-img">
-                  <img src="assets/img/expert1-7.jpg" alt="Вікторія Щербій" loading="lazy">
+                  <img src="assets/img/serts/shaynikowa/IMG_2719.JPG" alt="Вікторія Щербій" loading="lazy">
                 </div>
 
                 <div class="specialist__item-info">
@@ -781,7 +786,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </ul>
                                       </div>
                   <button class="specialist__item-button">Записатися</button>
-									<a href="/about_us/valeriiashainikova.html"><button class="specialist__item-button more-info">Детальніше</button></a>
+									<a href="/about_us/valeriiashainikova.html"><button class="more-info">Детальніше</button></a>
                 </div>
               </li>
               <li class="specialist__item swiper-slide" id="sherbiy" role="group" aria-label="5 / 5" style="width: 328.571px; margin-right: 20px;">
@@ -790,7 +795,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="specialist__item-img">
 
-                  <img src="assets/img/expert1-8.jpg" alt="Вікторія Щербій" loading="lazy">
+                  <img src="assets/img/serts/davyd/IMG_2406.JPG" alt="Вікторія Щербій" loading="lazy">
 
                 </div>
 
@@ -840,7 +845,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   </div>
 
                   <button class="specialist__item-button">Записатися</button>
-									<a href="/about_us/ulianadavyd.html"><button class="specialist__item-button more-info">Детальніше</button></a>
+									<a href="/about_us/ulianadavyd.html"><button class="more-info">Детальніше</button></a>
 
                 </div>
 
@@ -1268,75 +1273,75 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="section__top">
             <h2 class="main-title main-title--upper" data-aos="fade-left">Як проходить консультація?</h2>
           </div>
-          <div class="section__content">
-            <div class="offline__advice">
+          <div class="section__content services-content" id="services-content">
+            <div class="offline__advice services-offline" id="services-offline">
               <div class="offline__advice-wrapper">
-                <p>Офлайн</p>
+                <p>Онлайн</p>
                 <div class="offline__advice-items">
                   <div class="offline__advice-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
-                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="rgba(108, 151, 188, 1)" stroke-width="1.5" stroke-linecap="round"></path>
                     </svg>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                   </div>
                   <div class="offline__advice-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
-                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="rgba(108, 151, 188, 1)" stroke-width="1.5" stroke-linecap="round"></path>
                     </svg>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                   </div>
                   <div class="offline__advice-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
-                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="rgba(108, 151, 188, 1)" stroke-width="1.5" stroke-linecap="round"></path>
                     </svg>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                   </div>
                   <div class="offline__advice-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
-                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="rgba(108, 151, 188, 1)" stroke-width="1.5" stroke-linecap="round"></path>
                     </svg>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                   </div>
                   <div class="offline__advice-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
-                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="rgba(108, 151, 188, 1)" stroke-width="1.5" stroke-linecap="round"></path>
                     </svg>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="online__advice">
+            <div class="online__advice services-online" id="services-online">
               <div class="online__advice-wrapper">
-                <p>Онлайн</p>
+                <p>Офлайн</p>
                 <div class="online__advice-items">
                   <div class="online__advice-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
-                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="rgba(247, 151, 129, 1)" stroke-width="1.5" stroke-linecap="round"></path>
                     </svg>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                   </div>
                   <div class="online__advice-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
-                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="rgba(247, 151, 129, 1)" stroke-width="1.5" stroke-linecap="round"></path>
                     </svg>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                   </div>
                   <div class="online__advice-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
-                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="rgba(247, 151, 129, 1)" stroke-width="1.5" stroke-linecap="round"></path>
                     </svg>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                   </div>
                   <div class="online__advice-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
-                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="rgba(247, 151, 129, 1)" stroke-width="1.5" stroke-linecap="round"></path>
                     </svg>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                   </div>
                   <div class="online__advice-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35" fill="none">
-                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                      <path d="M25.193 13.125L20.2797 18.613C18.3327 20.7877 17.3592 21.875 16.0785 21.875C14.7977 21.875 13.8242 20.7877 11.8772 18.613L10.6097 17.1972M17.9014 30.625C12.433 30.625 9.69883 30.625 7.7821 29.2324C7.16308 28.7827 6.6187 28.2383 6.16895 27.6193C4.77637 25.7025 4.77637 22.9684 4.77637 17.5C4.77637 12.0316 4.77637 9.29746 6.16895 7.38073C6.6187 6.76171 7.16308 6.21733 7.7821 5.76758C9.69883 4.375 12.433 4.375 17.9014 4.375C23.3697 4.375 26.1039 4.375 28.0206 5.76758C28.6397 6.21733 29.184 6.76171 29.6338 7.38073C31.0264 9.29746 31.0264 12.0316 31.0264 17.5C31.0264 22.9684 31.0264 25.7025 29.6338 27.6193C29.184 28.2383 28.6397 28.7827 28.0206 29.2324C26.1039 30.625 23.3697 30.625 17.9014 30.625Z" stroke="rgba(247, 151, 129, 1)" stroke-width="1.5" stroke-linecap="round"></path>
                     </svg>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                   </div>
@@ -1350,17 +1355,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <section class="section sec-adapt__width sec-services mb150">
         <div class="container">
           <div class="section__top">
-            <h2 class="main-title main-title--upper" data-aos="fade-left"><a href="services.html">наші послуги</a></h2>
+            <h2 class="main-title main-title--upper" data-aos="fade-left"><a href="service.html">наші послуги</a></h2>
           </div>
           <div class="section__content">
             <div class="services">
               <div class="services-wrapper">
                 <div class="services-items">
                   <div class="services-item">
-                    <img src="./assets/img/example-psycho.jpg" alt="" draggable="false">
+                    <img src="./assets/img/9930884_4256006 1.png" alt="" draggable="false">
                     <div class="service__content-wrapper">
                       <div class="service-title">
-                        <a class="social-link" href="/services/family.html"><p class="social-link__text">Сімейний психотерапевт</p></a>
+                        <a class="social-link" href="services/family.html"><p class="social-link__text">Сімейний психотерапевт</p></a>
                       </div>
                       <div class="service-content">
                         Допоможе налагодити відносини між членами сім’ї та розв’язати затяжні конфлікти. Терапія проводиться у комплексі, коли спеціаліст взаємодіє і з батьками, і з дітьми. Це дозволяє виявити “корінь” проблеми і побачити сім’ю як єдине ціле.
@@ -1368,10 +1373,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                   </div>
                   <div class="services-item">
-                    <img src="./assets/img/example-psycho.jpg" alt="" draggable="false">
+                    <img src="./assets/img/12831897_5020294 1.png" alt="" draggable="false">
                     <div class="service__content-wrapper">
                         <div class="service-title">
-                            <a class="social-link" href="/services/family.html"><p class="social-link__text">Сімейний психотерапевт</p></a>
+                            <a class="social-link" href="services/child.html"><p class="social-link__text">Дитячий психотерапевт</p></a>
                         </div>
                       <div class="service-content reversed-content">
                         Допоможе налагодити відносини між членами сім’ї та розв’язати затяжні конфлікти. Терапія проводиться у комплексі, коли спеціаліст взаємодіє і з батьками, і з дітьми. Це дозволяє виявити “корінь” проблеми і побачити сім’ю як єдине ціле.
@@ -1379,10 +1384,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                   </div>
                   <div class="services-item">
-                    <img src="./assets/img/example-psycho.jpg" alt="" draggable="false">
+                    <img src="./assets/img/8331463_3885259 2.png" alt="" draggable="false">
                     <div class="service__content-wrapper">
                         <div class="service-title">
-                            <a class="social-link" href="/services/family.html"><p class="social-link__text">Сімейний психотерапевт</p></a>
+                            <a class="social-link" href="services/individual.html"><p class="social-link__text">Індивідуальні консультації</p></a>
                         </div>
                       <div class="service-content">
                         Допоможе налагодити відносини між членами сім’ї та розв’язати затяжні конфлікти. Терапія проводиться у комплексі, коли спеціаліст взаємодіє і з батьками, і з дітьми. Це дозволяє виявити “корінь” проблеми і побачити сім’ю як єдине ціле.
@@ -1398,9 +1403,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="services-items swiper-wrapper">
 
                   <div class="services-item swiper-slide">
-                    <img src="./assets/img/example-psycho.jpg" alt="" draggable="false">
+                    <img src="./assets/img/9930884_4256006 1.png" alt="" draggable="false">
                     <div class="service__content-wrapper">
-                      <a href="/services/family.html">
+                      <a href="services/family.html">
                         <div class="service-title">
                         	<p>Сімейний психотерапевт</p>
                       	</div>
@@ -1411,11 +1416,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                   </div>
                   <div class="services-item swiper-slide">
-                    <img src="./assets/img/example-psycho.jpg" alt="" draggable="false">
+                    <img src="./assets/img/12831897_5020294 1.png" alt="" draggable="false">
                     <div class="service__content-wrapper">
-                      <a href="/services/family.html">
+                      <a href="services/child.html">
                         <div class="service-title">
-                        	<p>Сімейний психотерапевт</p>
+                        	<p>Дитячий психотерапевт</p>
                       	</div>
                       	<div class="service-content">
                         	Допоможе налагодити відносини між членами сім’ї та розв’язати затяжні конфлікти. Терапія проводиться у комплексі, коли спеціаліст взаємодіє і з батьками, і з дітьми. Це дозволяє виявити “корінь” проблеми і побачити сім’ю як єдине ціле.
@@ -1424,11 +1429,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                   </div>
                   <div class="services-item swiper-slide">
-                    <img src="./assets/img/example-psycho.jpg" alt="" draggable="false">
+                    <img src="./assets/img/8331463_3885259 2.png" alt="" draggable="false">
                     <div class="service__content-wrapper">
-                      <a href="/services/family.html">
+                      <a href="services/individual.html">
                         <div class="service-title">
-                        	<p>Сімейний психотерапевт</p>
+                        	<p>Індивідуальні консультації</p>
                       	</div>
                       	<div class="service-content">
                         	Допоможе налагодити відносини між членами сім’ї та розв’язати затяжні конфлікти. Терапія проводиться у комплексі, коли спеціаліст взаємодіє і з батьками, і з дітьми. Це дозволяє виявити “корінь” проблеми і побачити сім’ю як єдине ціле.
@@ -1673,15 +1678,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="section__right">
               <div class="section__right-wrapper">
-								<form action="#" class="contact__form">
+								<form class="contact__form">
 									<div class="contacts-form__col sec-contact-with-us-contacts">
 										<input type="text" name="name" placeholder="Ваше ім'я">
 									</div>
 									<div class="contacts-form__col sec-contact-with-us-contacts">
 										<input class="form-tel" type="tel" name="tel" placeholder="+ 38 (000) 000-00-00" required="">
 									</div>
-                  <div class="contacts-form__col sec-contact-with-us-contacts">
-										<input class="form-tel" type="tel" name="tel" placeholder="Що вас турбує?" required="">
+                                    <div class="contacts-form__col sec-contact-with-us-contacts">
+										<input type="text" name="mess" placeholder="Що вас турбує?" required="">
 									</div>
 								</form>
 								<button class=" button--secondary contact-me-btn">ПЕРЕДЗВОНІТЬ МЕНІ</button>
@@ -1712,7 +1717,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               fill="#D3DDE6" />
                           </svg>
                         </span>
-                        <span class="social-link__text">Львів, вул. Костя Левицького 110</span>
+                        <span class="social-link__text">Львів, вул. К. Левицького 110</span>
                       </a>
                     </li>
                     <li class="contacts__links-list-item">
@@ -1896,7 +1901,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         fill="#D3DDE6" />
                     </svg>
                   </span>
-                  <span class="social-link__text">Львів, вул. Костя Левицького 110</span>
+                  <span class="social-link__text">Львів, вул К. Левицького 110</span>
                 </a>
               </li>
             </ul>
@@ -1906,9 +1911,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <ul class="footer__nav">
               <li class="footer__nav-item">
                 <a href="for_psyhologist.html" class="link">Психологам</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="seminars.html" class="link">Семінари</a>
               </li>
               <li class="footer__nav-item">
                 <a href="#reviev" class="link">Відгуки</a>
@@ -1922,10 +1924,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="/" class="link">Головна</a>
               </li>
               <li class="footer__nav-item">
-                <a href="about_us.html" class="link">Про нас</a>
+                <a href="about.html" class="link">Про нас</a>
               </li>
               <li class="footer__nav-item">
-                <a href="services.html" class="link">Послуги</a>
+                <a href="service.html" class="link">Послуги</a>
               </li>
               <li class="footer__nav-item">
                 <a href="#price" class="link">Ціни</a>
@@ -1945,13 +1947,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="footer__col footer__col--type">
             <ul class="footer__type-list">
               <li class="footer__type-list-item">
-                <a href="/services/family.html" class="link link--bold">Сімейний психотерапевт</a>
+                <a href="services/family.html" class="link link--bold">Сімейний психотерапевт</a>
               </li>
               <li class="footer__type-list-item">
-                <a href="/services/child.html" class="link link--bold">Дитячий психотерапевт</a>
+                <a href="services/child.html" class="link link--bold">Дитячий психотерапевт</a>
               </li>
               <li class="footer__type-list-item">
-                <a href="/services/individual.html" class="link link--bold">Індивідуальні заняття</a>
+                <a href="services/individual.html" class="link link--bold">Індивідуальні заняття</a>
               </li>
             </ul>
             <ul class="footer__social-list">
@@ -2011,7 +2013,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <script src="https://unpkg.com/imask"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-  <script type="text/javascript" src="assets/js/main2.js" ''></script>
+  <script type="text/javascript" src="assets/js/lviv.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script >
 
 
@@ -2212,13 +2215,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </script>
 
+<script type="text/javascript">
+    window.helpcrunchSettings = {
+      organization: 'goroshenkocenter',
+      appId: 'b79a6c14-03e1-4efd-a7bb-4e4467c9aadd',
+    };
+  </script>
+
+  <script type="text/javascript">
+    (function(w,d){var hS=w.helpcrunchSettings;if(!hS||!hS.organization){return;}var widgetSrc='https://'+hS.organization+'.widget.helpcrunch.com/';w.HelpCrunch=function(){w.HelpCrunch.q.push(arguments)};w.HelpCrunch.q=[];function r(){if (d.querySelector('script[src="' + widgetSrc + '"')) { return; }var s=d.createElement('script');s.async=1;s.type='text/javascript';s.src=widgetSrc;(d.body||d.head).appendChild(s);}if(d.readyState === 'complete'||hS.loadImmediately){r();} else if(w.attachEvent){w.attachEvent('onload',r)}else{w.addEventListener('load',r,false)}})(window, document)
+  </script>
+
 </body>
 <style>
     .specialist__item-marks-item {
         display:none !important;
     }
-    .up {
+    /* .up {
         bottom:15px !important;
-    }
+    } */
 </style>
 </html>

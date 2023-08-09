@@ -439,10 +439,27 @@ strong {
     pointer-events: none;
     overflow: hidden;
     background: rgba(211, 221, 230, 0.68);
-    z-index: 11;
+    z-index: 111;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
+}
+
+.popup-form input {
+    border: 1px solid #99c1e2 !important;
+    border-radius: 50px;
+    min-height: 60px;
+    font-size: 18px;
+    padding: 16px 40px;
+    height: unset;
+}
+
+.popup-form__h2 {
+    font-family: 'Cormorant';
+}
+
+.popup-form button {
+    border-radius: 50px;
 }
 
 .popup-form.active {
@@ -1084,6 +1101,55 @@ button.button.button--primary._ptev_none.more-info {
     border: 1px solid #f79781;
 }
 
+.more-info {
+    background: #fff;
+    color: #f79781;
+    border: 1px solid #f79781;
+    border-radius: 10px;
+    font-size: 23px;
+    min-height: 60px;
+}
+
+.specialist__item .more-info {
+    margin-top: 20px;
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 65px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 55px;
+    text-transform: uppercase;
+    background: #fff;
+    color: #f79781;
+    border: 1px solid #f79781 !important;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.specialist__item .more-info:hover {
+    -webkit-box-shadow: 3px 3px 15px #f5775b;
+    box-shadow: 3px 3px 15px #f5775b;
+}
+
+.more-info:hover {
+    -webkit-box-shadow: 3px 3px 15px #f5775b;
+    box-shadow: 3px 3px 15px #f5775b;
+}
+
+.buttons-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
 .section__right .button {
     margin: 0 0 30px;
     position: relative;
@@ -1148,10 +1214,6 @@ button.button.button--primary._ptev_none.more-info {
 
 .banner-price__text {
     margin: 0;
-}
-
-p.banner-price__text {
-    /* padding-right: 20px; */
 }
 
 .banner__price.right {
@@ -1535,6 +1597,20 @@ p {
     justify-content: center;
     gap: 10px;
     padding: 10px 15px;
+}
+
+.individual-consults-image img {
+    position: relative;
+}
+
+.individual-consults-image::after {
+    content: url(../img/Vector\ 5.png);
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: -1;
 }
 
 .individual-consults .section__left .button:after {
@@ -2970,6 +3046,12 @@ span.selected-text {
     margin-bottom: 50px;
 }
 
+.contacts-desc-wrapper {
+    padding: 10px;
+    border-radius: 15px;
+    background: rgba(240, 245, 249, 1);
+}
+
 .contacts-form,
 .feedback-form {
     display: -webkit-box;
@@ -3858,9 +3940,16 @@ footer {
 }
 
 .for__us-title {
-    line-height: 35px;
+    line-height: 50px;
     color: #536779;
     margin-bottom: 75px;
+}
+
+.fr-container {
+    padding-top: 20px;
+    padding: 10px;
+    background: rgba(240, 245, 249, 1);
+    border-radius: 15px;
 }
 
 .form__container .contacts-form .contacts-form__col,
@@ -4433,6 +4522,12 @@ span.pay__num {
         margin-top: 10px;
     }
 
+    .more-info {
+        font-size: 16px;
+        min-height: 40px;
+        padding: 20px 40px;
+    }
+
     .specialist__item-merit-txt {
         line-height: 24px;
     }
@@ -4457,6 +4552,15 @@ span.pay__num {
     }
 
     .specialist__item-button {
+        max-width: 90%;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .specialist__item .more-info{
         max-width: 90%;
         width: 100%;
         padding-left: 0;
@@ -5411,6 +5515,10 @@ span.pay__num {
         line-height: 30px;
     }
 
+    .specialist__item .more-info{
+        line-height: 30px;
+    }
+
     .sliderRev .swiper-slide-active {
         -webkit-transform: scale(1);
         -ms-transform: scale(1);
@@ -5966,15 +6074,22 @@ span.pay__num {
     }
 
     .first__visit .price_discount {
-        flex-direction: row;
-        gap: 10px;
+        flex-direction: column;
+    }
+
+    .first__visit .banner__price.right {
+        width: auto;
+        max-width: 100%;
+        min-width: unset;
+        justify-content: flex-end;
+        align-items: flex-start;
     }
 
     .old__price {
-    font-size: 20px;
-    line-height: 48px;
-    margin-top: 0;
-}
+        font-size: 20px;
+        line-height: 48px;
+        margin-top: 0;
+    }
 
     .about .banner-quote {
         font-size: 14px;
@@ -6456,6 +6571,15 @@ span.pay__num {
         flex-direction: column;
     }
 
+    .buttons-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
     .successes:nth-child(2) {
         flex-direction: column-reverse;
     }
@@ -6897,7 +7021,7 @@ span.pay__num {
     }
 
     .first__visit .section__right .button {
-        margin: 30px auto;
+        margin: 30px auto 50px;
         position: relative;
         display: flex;
         align-items: center;
@@ -6941,7 +7065,7 @@ span.pay__num {
         max-width: 100%;
         min-width: unset;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     }
     
     .first__visit p.banner-price__text {
@@ -8424,6 +8548,19 @@ span.pay__num {
         transform: scale(0.6);
     }
 
+    .sec-contact-with-us-contacts input, 
+    .sec-contact-with-us-contacts select, 
+    .sec-contact-with-us-contacts textarea {
+        height: 85px;
+        padding: 16px 40px;
+        line-height: 1.3;
+        font-size: 14px;
+        font-weight: 700;
+        color: #778da2;
+        width: 100%;
+        border: 1px solid #99c1e2;
+    }
+
     .hb .section__right .button {
         margin: 0 0 10px;
         position: relative;
@@ -8576,6 +8713,12 @@ span.pay__num {
     }
 
     .specialist__item-button {
+        max-width: 182px;
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .specialist__item .more-info{
         max-width: 182px;
         font-size: 16px;
         padding: 10px 0;

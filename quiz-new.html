@@ -39,6 +39,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+
+
 </head>
 
 <body id="home" class="home-page">
@@ -228,12 +230,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   </a>
                 </li>
                 <li class="nav__list-item">
-                  <a href="about_us.html" class="nav__list-item-link">
+                  <a href="about.html" class="nav__list-item-link">
                     <span class="nav__list-item-link-text">Про нас</span>
                   </a>
                 </li>
                 <li class="nav__list-item">
-                  <a href="services.html" class="nav__list-item-link">
+                  <a href="service.html" class="nav__list-item-link">
                     <span class="nav__list-item-link-text">Послуги</span>
                   </a>
                 </li>
@@ -541,6 +543,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>
                                 <button class="send__btn" type="submit">ВІДПРАВИТИ</button>
                             </form>
+                            <!-- <form id="quiz">
+                                <input type="hidden" name="fname" value="Форма з опросу">
+                                <div class="popup-form__col">
+                                  <input type="text" name="name" placeholder="Марія">
+                                </div>
+                                <div class="popup-form__col">
+                                  <input class="form-tel" name="tel" type="tel" placeholder="+ 38 (000) 000-00-00" required="">
+                                </div>
+                                <div class="popup-form__col">
+                                  <button type="submit" class="button button--secondary send__btn">Відправити</button>
+                                </div>
+                              </form> -->
                             <!-- <button class="send__btn" type="submit">ВІДПРАВИТИ</button> -->
                         </div>
                         <div class="form__info">
@@ -572,8 +586,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <script src="https://unpkg.com/imask"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-  <script type="text/javascript" src="assets/js/main2.js" ''></script>
-  <script>
+  <script type="text/javascript" src="assets/js/lviv.js?q12"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript">
 
     let count = 0
     let answer = []
@@ -917,120 +932,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             progressbarDone.style.width = widthCalc
         }
     })
-
-    // $(document).ready(function(){
-    //     $('#result').hide()
-    //     button_manager()
-
-
-    //     // 1
-
-        // function button_manager(){
-        //     if(count > 0){
-        //         $('#prev').show()
-        //         if(count == 7) {
-        //             $('#next').hide()
-        //         }
-        //         else {
-        //             $('#next').show()
-        //         }
-        //     }
-        //     else {
-        //         $('#prev').hide()
-        //     }
-        // }
-
-    //     // 2
-
-        // function adding_Question(data, i) {
-        //     $('#question').text(data[i].Quiz)
-        //     $('#options1').text(data[i].option1)
-        //     $('#options2').text(data[i].option2)
-        //     $('#options3').text(data[i].option3)
-        //     $('#options4').text(data[i].option4)
-        //     $('#number').text(Number(i+1))
-        //     let roundDiv = document.createElement("div")
-        //     roundDiv.classList.add('round')
-        //     $('#options').children("button").append(roundDiv)
-        // }
-
-    //     // 3
-
-        // function {
-        //     for(let i = 0; i < 8; i++) {
-        //         let a = document.getElementById("options").children
-        //         if(a[i].innerHTML == answer[count]){
-        //             $('#options').children("button")[i].classList.add('active')
-        //         }
-        //         else {
-        //             $('#options').children("button")[i].classList.remove("active")
-        //         }
-        //     }
-        // }
-
-    //     // 4
-
-    //     function creating_result(data){
-    //         for(let i = 0; i < answer.length; i++){
-
-    //         }
-
-    //         $('#quiz').hide()
-    //         $('#result').show()
-    //     }
-    //     $('#options').hide()
-
-        // fetch('questions.json').then(function(response){
-        //     return response.json()
-        // }).then(function(data){
-        //     $('#quiz__start-btn').click(function(){
-        //         $('#options').show();
-        //         adding_Question(data.Questions, count);
-        //         $('#quiz__start').hide()
-        //         $('#prev').hide()
-        //     })
-        // })
-
-        // $('.option').click(function(){
-        //     $(this).addClass("active")
-        //     $(this).siblings().removeClass("active");
-        //     answer[count] = $(this).html
-        // })
-
-        // $('#next').click(function(){
-        //     console.log(count)
-        //     console.log(answer.length);
-        //     if(count > answer.length - 1){
-        //         alert("asdasd")
-        //     }
-        //     else {
-        //         count++
-        //         adding_Question(data.Questions, count)
-        //         $('#prev').show()
-        //         $('.option').removeClass("active")
-        //         button_manager()
-        //         
-        //     }
-        // })
-
-        // $('#prev').click(function(){
-        //         count--
-        //         adding_Question(data.Questions, count)
-        //         button_manager()
-        //         
-        //     })
-
-    //         if(count == 8){
-    //             $('#next').click(function(){
-    //                 if(count > answer.length - 1){
-    //                     alert('adasdasd')
-    //                 }
-    //                 else {
-    //                     creating_result(data)
-    //                 }
-    //             })
-    //         }
-    // })
 
 
     //update page
